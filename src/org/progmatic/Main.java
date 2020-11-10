@@ -2,22 +2,20 @@ package org.progmatic;
 
 //import java.io.Reader;
 
-import java.io.FileNotFoundException;
+import java.util.*;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class Main {
+    private static ArrayList<Person>people=new ArrayList<>();
+    public static void main(String[] args)throws Exception {
 
-    public static void main(String[] args) throws FileNotFoundException {
-        Reader.read();
-        System.out.println();
-
-
+       people= Reader.read();
+        sortArray(people);
     }
 
     public static ArrayList<Person> sortArray(ArrayList<Person>lista){
-       // Collections.sort(lista);
+        Collections.sort(lista, new SortByName());
         return lista;
     }
 
