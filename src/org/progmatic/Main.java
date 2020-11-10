@@ -1,15 +1,12 @@
 package org.progmatic;
-
-//import java.io.Reader;
-
-import java.util.Collection;
+import java.util.ArrayList;
 import java.util.Collections;
 
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList <Person> personContainer=Reader.read();
-
+        ArrayList<Person> personContainer=Reader.read();
+        sortArray(personContainer);
     }
 
     public static ArrayList<Person>sortArray(ArrayList<Person>lista){
