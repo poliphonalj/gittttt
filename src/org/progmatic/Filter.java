@@ -5,7 +5,9 @@ import java.util.HashMap;
 public class Filter {
 //Írj egy Filter class-t, és annak írj egy cityFilter(String city, List<Person>) statikus metódust!
 
-    public static ArrayList<Person> cityFilter(String city, ArrayList<Person> people){
+
+
+    public  static ArrayList<Person> cityFilter(String city, ArrayList<Person> people){
         ArrayList <Person>actualPeople=new ArrayList<>();
         for (Person actualPerson : people) {
             if(city.equals(actualPerson.getCity())) {

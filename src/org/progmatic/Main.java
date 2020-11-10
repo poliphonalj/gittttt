@@ -12,6 +12,7 @@ public class Main {
 
        people= Reader.read();
         sortArray(people);
+        Filter.cityFilter("Chicago", people);//nincs kiiratva
     }
 
     public static ArrayList<Person> sortArray(ArrayList<Person>lista){
